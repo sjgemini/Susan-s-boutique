@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+} 
+header {
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2015/10/30/18/04/banner-1014539_960_720.jpg");
+    background-size: 100vw 30vh;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+    font-family: 'Nerko One', cursive;
+    width: 100%;
+    padding: 20px 40px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 15px
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.item-container {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.item-image {
+    width: 100px;
+    height: 120px;
+}
+
+.item-info {
+    line-height: 8px;
+}
+
+h4 {
+     font-family: 'Josefin Slab', serif;
+     font-weight: 500;
+}
+
+p {
+    font-size: 9px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.btn-el {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: center;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.basket-container, .listings-container {
+    display: flex;
+    justify-content: center;
+}
+
+.basket-el {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.title, .thanks {
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 22px;
+    margin: 10px auto;
+    padding-left: 50px;
+}
+
+.buy-btn {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 200px;
+ margin: 70px 230px;
+ padding: 10px 20px;
+ border-radius: 10px;
+ border: none;
+ font-family: 'Josefin Slab', serif;
+ font-weight: bold;
+ cursor: pointer;
+}
+
+.basketTotal {
+    width: 600px;
+    display: inline-grid;
+    grid-template-columns: 50px 250px 15px 50px;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.remove-btn {
+    background-color: white;
+    border: none;
+    font-size: 9px;
+    font-family: 'Josefin Slab', serif;
+    cursor: pointer;
+}
+
+.quantity {
+    font-size: 11px;
+    font-family: 'Josefin Slab', serif;
+}
+
+#total-price {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total, .total-price-el, .total-price {
+    text-align: right;
+    width: 600px;
+    font-size: 18px;
+    font-family: 'Josefin Slab', serif;
+    margin: 0 20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.close-modal-btn {
+   background-color: white;
+   cursor: pointer;
+   border: none;
+   margin: 0 1666% 0;
+}
+
+.pay-btn, .payment-message, .payment-form, input {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+}
+
+.pay-btn, .payment-message, .payment-form {
+    padding: 10px 80px;
+}
+
+.payment-message {
+    padding-top: 60px;
+}
+
+.pay-btn {
+    background-color: #fffafa;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+}
+
+.modal.visible { 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 500px;
+    background-color: #ccb5d8 ;
+    margin: auto;
+}
